@@ -273,7 +273,7 @@ namespace Menu {
 				"",
 				"Available values are \"cpu mem net proc\".",
 			#ifdef GPU_SUPPORT
-				"Or \"gpu0\" through \"gpu5\" for GPU boxes.",
+				"Or \"gpu0\" through \"gpu7\" for GPU boxes.",
 			#endif
 				"Separate values with whitespace.",
 				"",
@@ -549,6 +549,14 @@ namespace Menu {
 				"Empty string to disable."},
 			{"custom_gpu_name5",
 				"Custom gpu5 model name in gpu stats box.",
+				"",
+				"Empty string to disable."},
+			{"custom_gpu_name6",
+				"Custom gpu6 model name in gpu stats box.",
+				"",
+				"Empty string to disable."},
+			{"custom_gpu_name7",
+				"Custom gpu7 model name in gpu stats box.",
 				"",
 				"Empty string to disable."},
 		},

@@ -2000,6 +2000,8 @@ namespace Draw {
 					or current == "gpu3"
 					or current == "gpu4"
 					or current == "gpu5"
+					or current == "gpu6"
+					or current == "gpu7"
 				) Gpu::shown_panels.push_back(current.back()-'0');
 		}
 		Gpu::shown = Gpu::shown_panels.size();

@@ -223,7 +223,7 @@ void term_resize(bool force) {
 	}
 	else return;
 #ifdef GPU_SUPPORT
-	static const array<string, 10> all_boxes = {"gpu5", "cpu", "mem", "net", "proc", "gpu0", "gpu1", "gpu2", "gpu3", "gpu4"};
+	static const array<string, 12> all_boxes = {"gpu7", "gpu6" "gpu5", "cpu", "mem", "net", "proc", "gpu0", "gpu1", "gpu2", "gpu3", "gpu4"};
 #else
 	static const array<string, 5> all_boxes = {"", "cpu", "mem", "net", "proc"};
 #endif

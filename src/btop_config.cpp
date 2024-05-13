@@ -84,7 +84,7 @@ namespace Config {
 
 		{"graph_symbol_proc", 	"# Graph symbol to use for graphs in cpu box, \"default\", \"braille\", \"block\" or \"tty\"."},
 
-		{"shown_boxes", 		"#* Manually set which boxes to show. Available values are \"cpu mem net proc\" and \"gpu0\" through \"gpu5\", separate values with whitespace."},
+		{"shown_boxes", 		"#* Manually set which boxes to show. Available values are \"cpu mem net proc\" and \"gpu0\" through \"gpu7\", separate values with whitespace."},
 
 		{"update_ms", 			"#* Update time in milliseconds, recommended 2000 ms or above for better sample times for graphs."},
 
@@ -216,6 +216,8 @@ namespace Config {
 		{"custom_gpu_name3",	"#* Custom gpu3 model name, empty string to disable."},
 		{"custom_gpu_name4",	"#* Custom gpu4 model name, empty string to disable."},
 		{"custom_gpu_name5",	"#* Custom gpu5 model name, empty string to disable."},
+		{"custom_gpu_name6",	"#* Custom gpu6 model name, empty string to disable."},
+		{"custom_gpu_name7",	"#* Custom gpu7 model name, empty string to disable."},
 	#endif
 	};
 
@@ -252,6 +254,8 @@ namespace Config {
 		{"custom_gpu_name3", ""},
 		{"custom_gpu_name4", ""},
 		{"custom_gpu_name5", ""},
+		{"custom_gpu_name6", ""},
+		{"custom_gpu_name7", ""},
 		{"show_gpu_info", "Auto"}
 	#endif
 	};
@@ -417,7 +421,7 @@ namespace Config {
 					validError = "Malformatted preset in config value presets!";
 					return false;
 				}
-				if (not is_in(vals.at(0), "cpu", "mem", "net", "proc", "gpu0", "gpu1", "gpu2", "gpu3", "gpu4", "gpu5")) {
+				if (not is_in(vals.at(0), "cpu", "mem", "net", "proc", "gpu0", "gpu1", "gpu2", "gpu3", "gpu4", "gpu5", "gpu6", "gpu7")) {
 					validError = "Invalid box name in config value presets!";
 					return false;
 				}

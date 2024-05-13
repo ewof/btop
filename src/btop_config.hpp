@@ -46,7 +46,7 @@ namespace Config {
 	const vector<string> valid_boxes = {
 		"cpu", "mem", "net", "proc"
 #ifdef GPU_SUPPORT
-		,"gpu0", "gpu1", "gpu2", "gpu3", "gpu4", "gpu5"
+		,"gpu0", "gpu1", "gpu2", "gpu3", "gpu4", "gpu5", "gpu6", "gpu7"
 #endif
 		};
 	const vector<string> temp_scales = { "celsius", "fahrenheit", "kelvin", "rankine" };
